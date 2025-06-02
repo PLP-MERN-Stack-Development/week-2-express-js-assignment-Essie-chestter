@@ -1,6 +1,7 @@
-Product API
+PRODUCT API
 This is a RESTful API built with Express.js that manages product data. It supports standard CRUD (Create, Read, Update, Delete) operations, includes middleware for logging, authentication, and validation, and features robust error handling. Additionally, it offers advanced functionalities like filtering, pagination, and searching.
-Features
+
+FEATURES 
  * RESTful CRUD Operations: Full support for creating, reading, updating, and deleting products.
  * Custom Middleware:
    * Logger: Logs request method, URL, and timestamp.
@@ -10,7 +11,8 @@ Features
    * Global error handling middleware.
    * Custom error classes (NotFoundError, ValidationError, UnauthorizedError) for specific error types.
    * Appropriate HTTP status codes and detailed error messages.
- * Advanced Features:
+
+ ADVANCED FEATURES 
    * Filtering: Filter products by category using query parameters.
    * Pagination: Limit and offset product listings for efficient data retrieval.
    * Searching: Search products by name using query parameters.
@@ -259,7 +261,7 @@ Response:
   "kitchen": 1
 }
 
-Error Handling
+ERROR HANDLING 
 The API implements centralized error handling, providing consistent error responses.
  * 400 Bad Request (ValidationError): Sent when request payload fails validation checks (e.g., missing required fields, incorrect data types).
    {
@@ -281,7 +283,10 @@ Authentication
 Some routes (POST, PUT, DELETE for products) require an API key for authentication. This key must be sent in the request headers as X-API-Key.
 Required Header:
 X-API-Key: mysecretapikey
-Project Structure
+
+A .env.example file showing required environment variables
+
+PROJECT STRUCTURE 
 .
 ├── server.js             # Main Express app setup and entry point
 ├── api.routes.js         # Defines all product-related API routes
